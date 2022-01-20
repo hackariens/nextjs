@@ -1,6 +1,5 @@
 include make/general/Makefile
 STACK         := nextjs
-NETWORK       := proxylampy
 include make/docker/Makefile
 
 SUPPORTED_COMMANDS := linter
