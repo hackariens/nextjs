@@ -30,6 +30,14 @@ Hosts:
 
 - nextjs.traefik.me
 
+## Download
+
+```sh
+git clone git@github.com:koromerzhin/template-nextjs.git template-nextjs
+cd template-nextjs
+git submodule update --init
+```
+
 ## Install
 
 ``` sh
