@@ -1,10 +1,9 @@
 version: "3.4"
 networks:
-  proxylampy:
-    external: true
   net:
     driver: overlay
     attachable: true
+
 services:
   www:
     image: node:17.4.0
@@ -14,12 +13,4 @@ services:
     volumes:
       - ${PWD}/apps:/app
     networks:
-      - proxylampy
       - net
-    deploy:
-      labels:
-        - "traefik.enable=true"
-        - "traefik.http.routers.nextjs.rule=Host(`nextjs.traefik.me`)"
-        - "traefik.http.routers.nextjs-tls.tls.domains[0].main=nextjs.traefik.me"
-        - "traefik.http.routers.nextjs.tls=true"
-        - "traefik.http.services.nextjs.loadbalancer.server.port=3000"
