@@ -1,0 +1,16 @@
+version: "3.4"
+networks:
+  proxylampy:
+    external: true
+services:
+  www:
+    networks:
+      - proxylampy
+      - net
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.nextjs.rule=Host(`nextjs.traefik.me`)"
+        - "traefik.http.routers.nextjs-tls.tls.domains[0].main=nextjs.traefik.me"
+        - "traefik.http.routers.nextjs.tls=true"
+        - "traefik.http.services.nextjs.loadbalancer.server.port=3000"
