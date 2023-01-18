@@ -36,6 +36,10 @@ git clone --recurse-submodules git@github.com:hackariens/nextjs.git nextjs
 cd nextjs
 ```
 
+## Environnment
+
+Edit .env with .env.example
+
 ## Install
 
 ``` sh
