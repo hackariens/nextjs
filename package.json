@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/hackariens/nextjs#readme",
   "dependencies": {
-    "create-next-app": "^13.1.6",
+    "create-next-app": "^15.0.0",
     "korojscommands": "^1.2.14"
   }
 }
