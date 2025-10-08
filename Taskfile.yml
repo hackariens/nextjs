@@ -42,6 +42,7 @@ tasks:
   help:
     desc: "Affiche l'aide détaillée"
     aliases: [ h ]
+    silent: true
     cmds:
     - task: default
 
@@ -81,11 +82,13 @@ tasks:
 
   create:apps:
     desc: "Crée une nouvelle application nextjs dans le dossier apps"
+    silent: true
     cmds:
-      - npx create-next-app@latest apps --typescript --eslint --tailwind --app --no-src-dir --no-import-alias --use-npm --no-turbopack
+    - npx create-next-app@latest apps --typescript --eslint --tailwind --app --no-src-dir --no-import-alias --use-npm --no-turbopack
 
   nextjs:exec:
     desc: "Exécute une commande dans un conteneur en cours d'exécution"
+    silent: true
     cmds:
     - task: nextjs:getpull-image
     - task: create:apps
@@ -95,6 +98,7 @@ tasks:
 
   nextjs:bash:
     desc: "Ouvre un shell bash dans le conteneur www"
+    silent: true
     cmds:
     - task: docker:stack:shell
       vars:
