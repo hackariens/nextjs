@@ -20,7 +20,7 @@
     "create-next-app": "13.1.*"
   },
   "devDependencies": {
-    "cypress": "15.3.*",
+    "cypress": "15.5.*",
     "jscpd": "4.0.*",
     "markdownlint-cli": "0.45.*",
     "release-it": "19.0.*",
