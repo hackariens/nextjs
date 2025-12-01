@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/hackariens/nextjs#readme",
   "dependencies": {
-    "create-next-app": "15.5.*"
+    "create-next-app": "16.0.*"
   },
   "devDependencies": {
     "cypress": "15.5.*",
