@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/hackariens/nextjs#readme",
   "dependencies": {
-    "create-next-app": "15.5.*"
+    "create-next-app": "16.3.*"
   },
   "devDependencies": {
-    "cypress": "15.5.*",
-    "jscpd": "4.0.*",
-    "release-it": "19.0.*"
+    "cypress": "16.0.*",
+    "jscpd": "5.1.*",
+    "release-it": "21.0.*"
   }
 }
