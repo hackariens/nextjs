@@ -20,7 +20,7 @@
     "create-next-app": "15.5.*"
   },
   "devDependencies": {
-    "cypress": "15.5.*",
+    "cypress": "16.0.*",
     "jscpd": "5.2.*",
     "release-it": "19.0.*"
   }
